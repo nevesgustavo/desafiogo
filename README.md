@@ -1,4 +1,4 @@
-# This application will print a Code.education Rocks!
+# This application will only print a message 'Code.education Rocks!'
 
 
 ## Steps to execute
