@@ -15,8 +15,7 @@ COPY . .
 RUN go build -o ./out/go-hello-app .
 
 
-FROM alpine:latest
-RUN apk add ca-certificates
+FROM scratch
 COPY --from=builder /tmp/go-hello-app/out/go-hello-app /app/go-hello-app
 
 
